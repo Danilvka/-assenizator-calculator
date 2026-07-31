@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="ru">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Калькулятор ассенизаторских услуг</title><link rel="stylesheet" href="style.css"></head>
+<body><main class="app">
+<header><small>АССЕНИЗАТОРСКИЕ УСЛУГИ</small><h1>Рассчитать стоимость</h1><p>Выберите параметры заказа.</p></header>
+<section><h2>1. Объём резервуара</h2><div class="grid">
+<label class="radio"><input type="radio" name="volume" value="up_to_5"><span>До 5 м³</span></label>
+<label class="radio"><input type="radio" name="volume" value="over_5"><span>Более 5 м³</span></label>
+</div></section>
+<section><h2>2. Населённый пункт</h2><select id="settlement"><option value="">Выберите населённый пункт</option></select><div id="placePrice"></div></section>
+<section><h2>3. Дополнительный шланг</h2><p>Стандартная длина — 40 метров.</p><select id="hose"><option value="0">Без доплаты</option><option value="100">+100 ₽</option><option value="200">+200 ₽</option><option value="500">+500 ₽</option><option value="1000">+1 000 ₽</option><option value="1500">+1 500 ₽</option><option value="2000">+2 000 ₽</option></select></section>
+<section><h2>4. Дополнительные услуги</h2>
+<label class="check"><input id="extraHouse" type="checkbox"> Дополнительный дом (+50%)</label>
+<label class="check"><input id="siteMove" type="checkbox"> Переезд по участку (+300 ₽)</label>
+<label class="check"><input id="wash" type="checkbox"> Промывка (+300 ₽ за слив)</label>
+<div id="washWrap" hidden>Количество сливов: <input id="washCount" type="number" min="1" value="1"></div>
+<p>Сложный подъезд — без доплаты. Скидки за дополнительный рейс нет.</p></section>
+<section class="result"><small>5. ИТОГ</small><div id="total">—</div><div id="summary">Сначала выберите объём и населённый пункт.</div></section>
+</main><script src="data.js"></script><script src="script.js"></script></body></html>
