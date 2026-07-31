@@ -1,8 +1,0 @@
-<!doctype html><html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Калькулятор ассенизаторских услуг</title><link rel="stylesheet" href="style.css"></head><body><main>
-<header><h1>Калькулятор стоимости ассенизаторских услуг</h1><p>Выберите параметры — стоимость рассчитается автоматически.</p></header>
-<section><h2>1. Объём резервуара</h2><button class="choice" data-volume="up_to_5">До 5 м³</button><button class="choice" data-volume="over_5">Более 5 м³</button></section>
-<section><h2>2. Населённый пункт</h2><input id="search" placeholder="Введите название, например Кондратово"><div id="places"></div><div id="selected"></div></section>
-<section><h2>3. Дополнительный шланг</h2><select id="hose"><option value="0">Без доплаты</option><option value="100">+100 ₽</option><option value="200">+200 ₽</option><option value="500">+500 ₽</option><option value="1000">+1 000 ₽</option><option value="1500">+1 500 ₽</option><option value="2000">+2 000 ₽</option></select><p>Стандартная длина шланга — 40 метров.</p></section>
-<section><h2>4. Дополнительные услуги</h2><label><input type="checkbox" id="house"> Дополнительный дом (+50%)</label><label><input type="checkbox" id="move"> Переезд по участку (+300 ₽)</label><label><input type="checkbox" id="wash"> Промывка (+300 ₽ за слив)</label><div id="washCount" hidden><input id="count" type="number" min="1" value="1"> сливов</div><p>Сложный подъезд — без доплаты. Скидка за дополнительный рейс — отсутствует.</p></section>
-<section class="total"><h2>5. Стоимость</h2><strong id="total">Выберите объём и населённый пункт</strong><div id="details"></div></section>
-</main><script src="data.js"></script><script src="script.js"></script></body></html>
