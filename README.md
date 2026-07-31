@@ -1,1 +1,0 @@
-# -assenizator-calculator
