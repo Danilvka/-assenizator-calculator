@@ -1,0 +1,17 @@
+<!doctype html><html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Калькулятор ассенизаторских услуг</title><link rel="stylesheet" href="style.css"></head><body><main class="app">
+<header><small>АССЕНИЗАТОРСКИЕ УСЛУГИ</small><h1>Рассчитать стоимость</h1><p>Выберите параметры заказа.</p></header>
+<section><h2>1. Объём резервуара</h2><div class="grid"><label class="radio"><input type="radio" name="volume" value="up_to_5"><span>До 5 м³</span></label><label class="radio"><input type="radio" name="volume" value="over_5"><span>Более 5 м³</span></label></div></section>
+<section><h2>2. Населённый пункт</h2><select id="settlement"><option value="">Выберите населённый пункт</option></select><div id="placePrice"></div></section>
+<section><h2>3. Длина шланга</h2><p>Максимальная длина 40 метров.</p><div class="hose-options">
+<label class="hose-option"><input type="radio" name="hose" value="0"><span><b>До 8 м</b><em>Бесплатно</em></span></label>
+<label class="hose-option"><input type="radio" name="hose" value="100"><span><b>8–13 м</b><em>+100 ₽</em></span></label>
+<label class="hose-option"><input type="radio" name="hose" value="200"><span><b>13–18 м</b><em>+200 ₽</em></span></label>
+<label class="hose-option"><input type="radio" name="hose" value="500"><span><b>18–25 м</b><em>+500 ₽</em></span></label>
+<label class="hose-option"><input type="radio" name="hose" value="1000"><span><b>25–30 м</b><em>+1 000 ₽</em></span></label>
+<label class="hose-option"><input type="radio" name="hose" value="1500"><span><b>30–35 м</b><em>+1 500 ₽</em></span></label>
+<label class="hose-option"><input type="radio" name="hose" value="2000"><span><b>35–40 м</b><em>+2 000 ₽</em></span></label>
+</div></section>
+<section><h2>4. Дополнительные услуги</h2><label class="check"><input id="extraHouse" type="checkbox"> Дополнительный дом (+50%)</label><label class="check"><input id="siteMove" type="checkbox"> Переезд по участку (+300 ₽)</label><label class="check"><input id="wash" type="checkbox"> Промывка (+300 ₽ за слив)</label><div id="washWrap" hidden>Количество сливов: <input id="washCount" type="number" min="1" value="1"></div><p>Сложный подъезд — без доплаты. Скидки за дополнительный рейс нет.</p></section>
+<section class="result"><small>5. ИТОГ</small><div id="total">—</div><div id="summary">Сначала выберите объём и населённый пункт.</div></section>
+<section class="contact"><h2>Заказ услуги</h2><p>Для заказа позвоните по этому номеру телефона:</p><a href="tel:+79091144477">8 (909) 114-44-77</a></section>
+</main><script src="data.js"></script><script src="script.js"></script></body></html>
